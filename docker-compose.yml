@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  netcoretestdocker:
+    image: ${DOCKER_REGISTRY}netcoretestdocker
+    build:
+      context: .
+      dockerfile: NetcoreTestDocker/Dockerfile
