@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetcoreTestDocker", "NetcoreTestDocker\NetcoreTestDocker.csproj", "{C5AD2649-2B8B-4A11-AD68-A8ED001A8D77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetcoreTestDocker", "NetcoreTestDocker\NetcoreTestDocker.csproj", "{C5AD2649-2B8B-4A11-AD68-A8ED001A8D77}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FDE2425C-C870-458D-8BB2-00455515DE7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{68B5C1D3-09C8-42FA-AAF4-BC068E5C1DA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Containers", "Containers", "{FBDEDCE4-53F4-4086-B067-26E178BE5AFA}"
+	ProjectSection(SolutionItems) = preProject
+		Containers\Dockerfile = Containers\Dockerfile
+		Containers\nginx.conf = Containers\nginx.conf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,10 @@ Global
 		{FDE2425C-C870-458D-8BB2-00455515DE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE2425C-C870-458D-8BB2-00455515DE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE2425C-C870-458D-8BB2-00455515DE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B5C1D3-09C8-42FA-AAF4-BC068E5C1DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B5C1D3-09C8-42FA-AAF4-BC068E5C1DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B5C1D3-09C8-42FA-AAF4-BC068E5C1DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B5C1D3-09C8-42FA-AAF4-BC068E5C1DA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

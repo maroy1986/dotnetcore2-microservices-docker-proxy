@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace NetcoreTestDocker
+namespace WebApplication1
 {
     public class Program
     {
