@@ -20,13 +20,13 @@ services:
     networks:
       - nginx-proxy
   myapp.reverseproxy:
-    image: reverseproxy:latest
+    image: reverseproxy_test:latest
     depends_on:
       - netcoretestdocker
       - webapplication1
     ports:
       - "8080:8080"
-    container_name: reverseproxy
+    container_name: reverseproxy_test
     build:
       context: .
       dockerfile: Containers/Dockerfile
