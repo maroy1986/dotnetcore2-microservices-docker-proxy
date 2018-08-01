@@ -6,5 +6,5 @@ Your need to have Visual Studio 2017 installed with Docker support which imply y
 
 # How to run
 Open the solution into VS2017, it "Docker" start button on top. Everything should fireup. You can then access the services with the following URLs :
-http://localhost:8080/service1/api/values/1234
-http://localhost:8080/service2/api/values/1234
+- http://localhost:8080/service1/api/values/1234
+- http://localhost:8080/service2/api/values/1234
