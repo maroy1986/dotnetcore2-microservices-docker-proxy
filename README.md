@@ -11,3 +11,9 @@ Open the solution into VS2017, it "Docker" start button on top. Everything shoul
 
 # Questions, issues?
 You have questions about how it works or any question, concerns? Open an issue, I'll be happy to try to help you out!
+
+# Known Issues and workarounds
+
+## HRESULT: 0x80004004
+
+See this : https://stackoverflow.com/questions/45555660/visual-studio-2017-hresult-0x80004004
