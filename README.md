@@ -15,6 +15,10 @@ Open the solution into VS2017 (or 2019), hit "Docker" start button on top. Every
 - http://localhost:8080/service2/api/values/1234
 - No swagger for Service 2
 
+# Older versions of this repo
+
+- NetCore 2.1 : https://github.com/maroy1986/dotnetcore2-microservices-docker-proxy/tree/NetCore21
+
 # Questions, issues?
 You have questions about how it works or any question, concerns? Open an issue, I'll be happy to try to help you out!
 
