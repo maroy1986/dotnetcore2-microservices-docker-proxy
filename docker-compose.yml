@@ -11,10 +11,10 @@ services:
     networks:
       - nginx-proxy
   webapplication1:
-    image: webapplication1
+    image: webappapi
     build:
       context: .
-      dockerfile: WebApplication1/Dockerfile
+      dockerfile: WebAppApi/Dockerfile
     ports:
       - "5001:80"
     networks:
