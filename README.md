@@ -5,25 +5,11 @@ A quick POC on having multiple .Net 6 WebAPI running in docker containers access
 Your need to have Visual Studio 2022 installed with Docker support which imply you also have Docker installed on your machine WSL2.
 
 # How to run
-Open the solution into VS2022, hit "Docker" start button on top. Everything should fireup. You can then access the services with the following URLs :
-
-## Service 1
-- API : http://localhost:8080/service1/api/values/1234
-- Swagger demo : http://localhost:8080/service1/swagger/
-
-## Service 2
-- http://localhost:8080/service2/api/values/1234
-- No swagger for Service 2
-
-# Older versions of this repo
-
-- NetCore 2.1 : https://github.com/maroy1986/dotnetcore2-microservices-docker-proxy/tree/NetCore21
+Open the solution into VS2022, hit "Docker" start button on top. Everything should fireup. You can then access the services by going to http://localhost:8080
 
 # Questions, issues?
 You have questions about how it works or any question, concerns? Open an issue, I'll be happy to try to help you out!
 
 # Known Issues and workarounds
 
-## HRESULT: 0x80004004
-
-See this : https://stackoverflow.com/questions/45555660/visual-studio-2017-hresult-0x80004004
+- None so far!
