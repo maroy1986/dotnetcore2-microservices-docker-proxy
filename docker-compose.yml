@@ -19,6 +19,15 @@ services:
       - "5001:80"
     networks:
       - nginx-proxy
+  webapplication3:
+    image: webappapi3
+    build:
+      context: .
+      dockerfile: WebAppApi3/Dockerfile
+    ports:
+      - "5002:80"
+    networks:
+      - nginx-proxy
   myapp.reverseproxy:
     image: reverseproxy_test:latest
     depends_on:
@@ -29,7 +38,7 @@ services:
     container_name: reverseproxy_test
     build:
       context: .
-      dockerfile: Containers/Dockerfile
+      dockerfile: Containers/proxy/Dockerfile
     restart: always
     networks:
       - nginx-proxy

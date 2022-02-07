@@ -13,3 +13,8 @@ services:
     ports:
       - "80"
 
+  webapplication3:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
