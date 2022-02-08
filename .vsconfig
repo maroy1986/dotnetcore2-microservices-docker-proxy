@@ -48,7 +48,6 @@
     "Microsoft.VisualStudio.Component.DiagnosticTools",
     "Microsoft.VisualStudio.Component.EntityFramework",
     "Microsoft.VisualStudio.Component.Debugger.JustInTime",
-    "Component.Microsoft.VisualStudio.LiveShare.2022",
     "Microsoft.VisualStudio.Component.WslDebugging",
     "Microsoft.VisualStudio.Component.IntelliCode",
     "Microsoft.VisualStudio.Workload.NetWeb",
@@ -65,8 +64,6 @@
     "Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools",
     "Microsoft.VisualStudio.Component.Azure.Powershell",
     "Microsoft.VisualStudio.Workload.Azure",
-    "Microsoft.Component.PythonTools",
-    "Microsoft.VisualStudio.Workload.Python",
     "Microsoft.VisualStudio.Component.Node.Tools",
     "Microsoft.VisualStudio.Workload.Node"
   ]
