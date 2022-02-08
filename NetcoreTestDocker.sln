@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetcoreTestDocker", "NetcoreTestDocker\NetcoreTestDocker.csproj", "{C5AD2649-2B8B-4A11-AD68-A8ED001A8D77}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FDE2425C-C870-458D-8BB2-00455515DE7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Containers", "Containers", "{FBDEDCE4-53F4-4086-B067-26E178BE5AFA}"
@@ -16,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppApi", "WebAppApi\WebAppApi.csproj", "{BF9DD97E-2CFA-4BEF-A61A-4EF4729B9F30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppApi3", "WebAppApi3\WebAppApi3.csproj", "{6B81AFED-021D-42FC-8BFA-AA9CD1B85CA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppApi3", "WebAppApi3\WebAppApi3.csproj", "{6B81AFED-021D-42FC-8BFA-AA9CD1B85CA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proxy", "proxy", "{6108E785-ED67-4673-A836-B40BAEF7712B}"
 	ProjectSection(SolutionItems) = preProject
@@ -25,16 +23,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "proxy", "proxy", "{6108E785
 		Containers\proxy\nginx.conf = Containers\proxy\nginx.conf
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppApi2", "WebAppApi2\WebAppApi2.csproj", "{CD7452A9-1BDB-4B3D-966F-9B8E12ECCA3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C5AD2649-2B8B-4A11-AD68-A8ED001A8D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5AD2649-2B8B-4A11-AD68-A8ED001A8D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5AD2649-2B8B-4A11-AD68-A8ED001A8D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5AD2649-2B8B-4A11-AD68-A8ED001A8D77}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FDE2425C-C870-458D-8BB2-00455515DE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FDE2425C-C870-458D-8BB2-00455515DE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE2425C-C870-458D-8BB2-00455515DE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{6B81AFED-021D-42FC-8BFA-AA9CD1B85CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B81AFED-021D-42FC-8BFA-AA9CD1B85CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B81AFED-021D-42FC-8BFA-AA9CD1B85CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7452A9-1BDB-4B3D-966F-9B8E12ECCA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7452A9-1BDB-4B3D-966F-9B8E12ECCA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7452A9-1BDB-4B3D-966F-9B8E12ECCA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7452A9-1BDB-4B3D-966F-9B8E12ECCA3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

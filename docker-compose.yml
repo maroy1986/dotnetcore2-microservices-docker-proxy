@@ -1,17 +1,10 @@
 version: '3.4'
 
 services:
-  netcoretestdocker:
-    image: netcoretestdocker
-    build:
-      context: .
-      dockerfile: NetcoreTestDocker/Dockerfile
-    ports:
-      - "5000:80"
-    networks:
-      - nginx-proxy
   webapplication1:
     image: webappapi
+    depends_on:
+      - mssqldev
     build:
       context: .
       dockerfile: WebAppApi/Dockerfile
@@ -19,8 +12,21 @@ services:
       - "5001:80"
     networks:
       - nginx-proxy
+  webapplication2:
+    image: webappapi2
+    depends_on:
+      - mssqldev
+    build:
+        context: .
+        dockerfile: WebAppApi2/Dockerfile
+    ports:
+        - "5003:80"
+    networks:
+        - nginx-proxy
   webapplication3:
     image: webappapi3
+    depends_on:
+      - mssqldev
     build:
       context: .
       dockerfile: WebAppApi3/Dockerfile
@@ -28,11 +34,21 @@ services:
       - "5002:80"
     networks:
       - nginx-proxy
+  mssqldev:
+    image: "mcr.microsoft.com/mssql/server"
+    container_name: mssql-dev
+    environment:
+        SA_PASSWORD: "SomeHardPasswordNotGonnaLie2022!" # Do not hardcode your password here, this is just for demo purpose.
+        ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - nginx-proxy
   myapp.reverseproxy:
     image: reverseproxy_test:latest
     depends_on:
-      - netcoretestdocker
       - webapplication1
+      - webapplication3
     ports:
       - "8080:8080"
     container_name: reverseproxy_test
@@ -42,6 +58,7 @@ services:
     restart: always
     networks:
       - nginx-proxy
+
 
 networks:
   nginx-proxy:
