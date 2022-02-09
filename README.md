@@ -1,4 +1,5 @@
-THIS REPOSITORY IS ARCHIVED. NEW, IMPROVED AND USING LATEST .NET6 CAN BE FOUND HERE : https://github.com/maroy1986/net6-microservices-local-stack
+
+# **THIS REPOSITORY IS ARCHIVED. NEW, IMPROVED AND USING LATEST .NET6 CAN BE FOUND HERE : https://github.com/maroy1986/net6-microservices-local-stack**
 
 # dotnetcore2-microservices-docker-proxy
 A quick POC on having multiple .Net Core 2.2 WebAPI running in docker containers accessible through an nginx proxy container.
