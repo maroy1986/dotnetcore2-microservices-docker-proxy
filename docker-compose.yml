@@ -1,5 +1,5 @@
-version: '3.4'
-
+version: '3.8'
+  
 services:
   webapplication1:
     image: webappapi
@@ -36,6 +36,13 @@ services:
       - nginx-proxy
   mssqldev:
     image: "mcr.microsoft.com/mssql/server"
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P SomeHardPasswordNotGonnaLie2022! -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      retries: 10
+      start_period: 10s
+      timeout: 3s 
     container_name: mssql-dev
     environment:
         SA_PASSWORD: "SomeHardPasswordNotGonnaLie2022!" # Do not hardcode your password here, this is just for demo purpose.
@@ -44,21 +51,20 @@ services:
       - "1433:1433"
     networks:
       - nginx-proxy
-  myapp.reverseproxy:
-    image: reverseproxy_test:latest
+  reverseproxy:
+    image: reverseproxy_dev:latest
+    container_name: reverse-proxy-dev
+    restart: always
     depends_on:
       - webapplication1
       - webapplication3
     ports:
-      - "8080:8080"
-    container_name: reverseproxy_test
+      - "8080:8080" 
     build:
       context: .
       dockerfile: Containers/proxy/Dockerfile
-    restart: always
     networks:
       - nginx-proxy
-
 
 networks:
   nginx-proxy:

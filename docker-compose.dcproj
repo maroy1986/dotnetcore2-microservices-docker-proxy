@@ -5,8 +5,8 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>fde2425c-c870-458d-8bb2-00455515de7e</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/values</DockerServiceUrl>
-    <DockerServiceName>netcoretestdocker</DockerServiceName>
+    <DockerServiceUrl>http://localhost:8080/</DockerServiceUrl>
+    <DockerServiceName>net6-dev-stack</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
